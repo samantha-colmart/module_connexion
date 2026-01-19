@@ -1,0 +1,371 @@
+/* ================= RESET ================= */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ================= THÈME DRAMAS ================= */
+body {
+  background-image: url('../images/fond.png'); /* change le chemin si besoin */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f0e6f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* ================= BLOCS PRINCIPAUX ================= */
+.main-content {
+  background: rgba(0, 0, 0, 0.5); /* fond noir semi-transparent */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  margin-bottom: 100px; /* pour éviter que le footer fixe recouvre le contenu */
+}
+
+.main-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.main-content p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* ================= LIENS / BOUTONS ================= */
+.main-content a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #6a0dad, #c471ed);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.main-content a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* ================= HEADER ================= */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #6a0dad, #c471ed, #f78ca0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #f78ca0;
+    position: fixed;      /* fixe le header en haut */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header a, header h1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    flex: 1;
+}
+
+.genre-buttons a {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.genre-buttons a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ================= MAIN CONTENT ================= */
+main {
+  padding: 120px 20px 80px; /* haut pour header, bas pour footer */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================= FORMULAIRES ================= */
+form {
+  background: rgba(0, 0, 0, 0.5); /* fond noir semi-transparent comme accueil */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0e6f6;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6a0dad, #c471ed);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* ================= ADMIN CONNECTÉ ================= */
+.admin-info {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent */
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.admin-info h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.admin-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* ================= TABLE ADMIN ================= */
+.admin-table-container {
+    width: 100%;
+    overflow-x: auto; /* scroll horizontal si écran petit */
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #f78ca0;
+}
+
+.admin-table th {
+    background: #6a0dad;
+    color: white;
+}
+
+.admin-table tr:nth-child(even) {
+    background: rgba(255, 182, 193, 0.1);
+}
+
+.admin-table tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.admin-table tr:hover {
+    background: rgba(255, 182, 193, 0.2);
+}
+
+/* ================= PROFIL ================= */
+.profil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.profil-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0e6f6;
+}
+
+.profil-form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #c471ed;
+  color: white;
+  cursor: pointer;
+}
+
+.profil-form button:hover {
+  filter: brightness(1.2);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    width: 100%;
+    background: #6a0dad;
+    color: white;
+    border-top: 3px solid #f78ca0;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;      /* fixe le footer en bas */
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 2em;
+  }
+
+  .main-content p {
+    font-size: 1.2em;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form {
+    padding: 20px;
+  }
+}
+
+/* ================= DRAMAS ================= */
+
+/* Cartes dramas */
+.dramas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.drama-card {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.drama-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.drama-card:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.drama-short {
+    font-size: 1em;
+    padding: 0 10px;
+}
+
+/* Modal plein écran */
+.drama-modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2000;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.drama-modal h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.drama-modal .drama-img {
+    max-width: 80%;
+    max-height: 70%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.drama-modal p {
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Croix de fermeture */
+.drama-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.drama-close:hover {
+    color: #ffb6c1;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+    .drama-card {
+        width: 90%;
+    }
+    .drama-modal .drama-img {
+        max-width: 100%;
+        max-height: 60%;
+    }
+}
