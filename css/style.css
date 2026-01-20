@@ -17,28 +17,46 @@ body {
 
 /* ================= HEADER ================= */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(135deg, #6a0dad, #c471ed, #f78ca0);
-  border-bottom: 3px solid #f78ca0;
-  z-index: 1000;
+    width: 100%;
+    background: linear-gradient(135deg, #6a0dad, #c471ed, #f78ca0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #f78ca0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
 
 header a,
 header h1 {
-  color: white;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+}
+
+.genre-buttons a {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.genre-buttons a:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* ================= MAIN ================= */
@@ -54,6 +72,10 @@ main {
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0,0,0,0.7);
+  margin: 140px auto 40px;
+  max-width: 1200px;
+  color: #fff;
+  text-align: center;
 }
 
 /* Titres */
@@ -61,6 +83,11 @@ main {
   font-size: 3em;
   margin-bottom: 20px;
   text-shadow: 2px 2px 6px black;
+}
+
+.main-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 
 .main-content p {
@@ -98,6 +125,9 @@ main {
   background: rgba(0,0,0,0.6);
   border-radius: 18px;
   padding: 15px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
   transition: transform 0.2s, filter 0.2s;
 }
 
@@ -149,6 +179,52 @@ form button {
   cursor: pointer;
 }
 
+/* ================= ADMIN ================= */
+.admin-info {
+    padding: 25px;
+    background: rgba(50,50,50,0.6);
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.admin-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(30,30,30,0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.admin-table th {
+    background: linear-gradient(90deg, #6a0dad, #c471ed);
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.05);
+}
+
+.admin-table tr:hover {
+    background: rgba(255,182,193,0.2);
+    cursor: pointer;
+}
+
 /* ================= FOOTER ================= */
 footer {
   position: fixed;
@@ -162,10 +238,24 @@ footer {
   border-top: 3px solid #f78ca0;
 }
 
+/* ================= PAGE DRAMAS FOND FIXE ================= */
+.dramas-page {
+    background-image: url('../images/fond.png');
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .dramas-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 10px;
   }
 }
 
@@ -174,8 +264,17 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .main-content {
+    padding: 20px;
+    margin-top: 120px;
+  }
+
   .main-content h1 {
     font-size: 2em;
+  }
+
+  .main-content h2 {
+    font-size: 1.5em;
   }
 
   .main-content p {

@@ -1,6 +1,6 @@
 <?php
-include '../includes/config.php';
-include '../includes/header.php';
+include ('../includes/config.php');
+include ('../includes/header.php');
 
 $message = "";
 
@@ -46,4 +46,4 @@ if (!empty($_POST)) {
     <?php endif; ?>
 </div>
 
-<?php include '../includes/footer.php'; ?>
+<?php include ('../includes/footer.php'); ?>
