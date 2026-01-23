@@ -281,3 +281,25 @@ footer {
     font-size: 1.2em;
   }
 }
+
+/* ================= IMAGES DRAMA ================= */
+.drama-top .drama-img img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.casting .actor img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.drama-gallery .gallery-item img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}

@@ -11,27 +11,27 @@ $pageClass = 'dramas-page';
 include '../includes/header.php';
 
 $drama = [
-    'titre' => 'Strong Girl Bong-Soon',
-    'img' => '../images/stronggirlbongsoon.jpg',
-    'date' => '24/02/2017 - 15/04/2017',
+    'titre' => 'Vincenzo',
+    'img' => '../images/vincenzo.jpg',
+    'date' => '20/02/2021 - 25/04/2021',
     'pays' => 'Corée du Sud',
     'age' => '15 ans et +',
-    'episodes' => '16 X 60 min + 1 épisode spécial dans les coulisses',
-    'theme' => 'Romance, Action, Comédie, Policier, Triangle amoureux',
-    'plateforme' => 'Netflix, Viki',
-    'suite' => 'Strong Girl Nam-Soon (suite)',
+    'episodes' => '20 X 70 min',
+    'theme' => 'Crime, Avocat, Mafia, Comédie, Romance',
+    'plateforme' => 'Netflix',
+    'suite' => '-',
     'adaptation' => '-',
-    'visionnage' => '01/12/2017',
-    'synopsis' => 'Do Bong Soon, une jeune femme apparemment fragile, possède en secret une force surhumaine héritée de sa famille, réservée à aider les autres. Après avoir défendu un inconnu contre des malfrats, elle est engagée comme garde du corps par An Min Hyeok, président d’une entreprise de jeux vidéo. En travaillant à ses côtés, elle se rapproche de lui tout en se retrouvant partagée entre son patron et son ami d’enfance, In Guk Doo.',
+    'visionnage' => '25/04/2021',
+    'synopsis' => 'De retour d’Italie, Vincenzo Cassano, avocat et ancien conseiller de la mafia, se retrouve impliqué dans une affaire opposant un puissant groupe pharmaceutique à un petit cabinet d’avocats. Aux côtés de l’ambitieuse Hong Cha Young, il utilise ses méthodes mafieuses pour lutter contre la corruption et rendre justice.',
     'casting' => [
-        ['nom' => 'Park Bo-young', 'photo' => '../images/parkboyoung.jpg'],
-        ['nom' => 'Park Hyung-sik', 'photo' => '../images/parkhyungsik.jpeg'],
-        ['nom' => 'Ji Soo', 'photo' => '../images/jisoo.jpg']
+        ['nom' => 'Jeon Yeo Been', 'photo' => '../images/Yeobeen.jpeg'],
+        ['nom' => 'Song Joong Ki', 'photo' => '../images/SongJoongKi.jpg'],
+        ['nom' => 'Ok Taec Yeon', 'photo' => '../images/OkTaecYeon.jpg']
     ],
     'galerie' => [
-        '../images/sgbongsoon_scene1.jpeg',
-        '../images/sgbongsoon_scene2.jpeg',
-        '../images/sgbongsoon_scene3.jpeg'
+        '../images/vincenzo_scene1.jpg',
+        '../images/vincenzo_scene2.jpeg',
+        '../images/vincenzo_scene3.jpeg'
     ]
 ];
 ?>
@@ -64,10 +64,10 @@ $drama = [
 
     <!-- NOTES -->
     <div class="drama-notes" style="display:flex; gap:60px; flex-wrap:wrap; font-weight:bold; margin-top:20px; justify-content:center; font-size:1.2em;">
-        <span>Viki : <span style="color:#ff9900;">9.7/10</span></span>
-        <span>Nautiljon : <span style="color:#ff9900;">8.92/10</span></span>
-        <span>MyDramaList : <span style="color:#ff9900;">8.7/10</span></span>
-        <span>Ma note : <span style="color:#00cc66;">9/10</span></span>
+        <span>Viki : <span style="color:#ff9900;">X/10</span></span>
+        <span>Nautiljon : <span style="color:#ff9900;">8.96/10</span></span>
+        <span>MyDramaList : <span style="color:#ff9900;">8.9/10</span></span>
+        <span>Ma note : <span style="color:#00cc66;">6/10</span></span>
     </div>
 </div>
 
@@ -96,5 +96,6 @@ $drama = [
 </div>
 
 <?php include '../includes/footer.php'; ?>
+
 
     <!-- rajout d'une section commentaire -->

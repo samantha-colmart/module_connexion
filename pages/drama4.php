@@ -11,27 +11,26 @@ $pageClass = 'dramas-page';
 include '../includes/header.php';
 
 $drama = [
-    'titre' => 'Strong Girl Bong-Soon',
-    'img' => '../images/stronggirlbongsoon.jpg',
-    'date' => '24/02/2017 - 15/04/2017',
-    'pays' => 'Corée du Sud',
-    'age' => '15 ans et +',
-    'episodes' => '16 X 60 min + 1 épisode spécial dans les coulisses',
-    'theme' => 'Romance, Action, Comédie, Policier, Triangle amoureux',
-    'plateforme' => 'Netflix, Viki',
-    'suite' => 'Strong Girl Nam-Soon (suite)',
+    'titre' => 'Melody of Golden Age',
+    'img' => '../images/melody_of_golden_age.jpeg',
+    'date' => '26/08/2024 - 13/09/2024',
+    'pays' => 'Chine',
+    'age' => '-',
+    'episodes' => '40 X 45 min',
+    'theme' => 'Romance, Historique, Mystère, Enquête, Mariage forcé',
+    'plateforme' => 'Viki',
+    'suite' => '-',
     'adaptation' => '-',
-    'visionnage' => '01/12/2017',
-    'synopsis' => 'Do Bong Soon, une jeune femme apparemment fragile, possède en secret une force surhumaine héritée de sa famille, réservée à aider les autres. Après avoir défendu un inconnu contre des malfrats, elle est engagée comme garde du corps par An Min Hyeok, président d’une entreprise de jeux vidéo. En travaillant à ses côtés, elle se rapproche de lui tout en se retrouvant partagée entre son patron et son ami d’enfance, In Guk Doo.',
+    'visionnage' => '27/08/2024 - 20/09/2024',
+    'synopsis' => 'Dotée d’un grand talent de déduction, Yan Xing rêve de devenir officière et de résoudre des enquêtes. Mais lorsque sa sœur fuit un mariage arrangé, elle est contrainte de prendre sa place et d’épouser Shen Du, commandant de la garde impériale, bouleversant ainsi son destin.',
     'casting' => [
-        ['nom' => 'Park Bo-young', 'photo' => '../images/parkboyoung.jpg'],
-        ['nom' => 'Park Hyung-sik', 'photo' => '../images/parkhyungsik.jpeg'],
-        ['nom' => 'Ji Soo', 'photo' => '../images/jisoo.jpg']
+        ['nom' => 'Deng En Xi', 'photo' => '../images/deng_en_xi.jpeg'],
+        ['nom' => 'Ding Yu Xi', 'photo' => '../images/dingyuxi.jpeg']
     ],
     'galerie' => [
-        '../images/sgbongsoon_scene1.jpeg',
-        '../images/sgbongsoon_scene2.jpeg',
-        '../images/sgbongsoon_scene3.jpeg'
+        '../images/melodyofgage_scene1.jpg',
+        '../images/melodyofgage_scene2.jpg',
+        '../images/melodyofgage_scene3.jpeg'
     ]
 ];
 ?>
@@ -64,10 +63,10 @@ $drama = [
 
     <!-- NOTES -->
     <div class="drama-notes" style="display:flex; gap:60px; flex-wrap:wrap; font-weight:bold; margin-top:20px; justify-content:center; font-size:1.2em;">
-        <span>Viki : <span style="color:#ff9900;">9.7/10</span></span>
-        <span>Nautiljon : <span style="color:#ff9900;">8.92/10</span></span>
-        <span>MyDramaList : <span style="color:#ff9900;">8.7/10</span></span>
-        <span>Ma note : <span style="color:#00cc66;">9/10</span></span>
+        <span>Viki : <span style="color:#ff9900;">9.4/10</span></span>
+        <span>Nautiljon : <span style="color:#ff9900;">8.29/10</span></span>
+        <span>MyDramaList : <span style="color:#ff9900;">8.1/10</span></span>
+        <span>Ma note : <span style="color:#00cc66;">7/10</span></span>
     </div>
 </div>
 
@@ -96,5 +95,6 @@ $drama = [
 </div>
 
 <?php include '../includes/footer.php'; ?>
+
 
     <!-- rajout d'une section commentaire -->
